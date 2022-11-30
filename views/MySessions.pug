@@ -1,0 +1,21 @@
+html
+  head
+    title!= title
+  body
+    h1 !{message}
+    table(border='1')
+      thead
+         th ID
+         th Name
+         th Type
+         th Date
+         th Length
+      tbody
+        each session in sessions
+          tr
+            td #{session.SessionID}
+            td #{session.SessionName}
+            td #{session.SessionType}
+            td #{session.SessionDate}
+            td #{session.Length}
+      

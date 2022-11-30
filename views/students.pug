@@ -1,0 +1,39 @@
+html
+  head
+    title!= title
+  body
+    h1 !{message}
+    table(border='1')
+      thead
+         th StudentID
+         th StudentFName
+         th StudentSName
+         th StudentPassword
+      tbody
+        each student in students
+          tr
+            td #{student.StudentID}
+            td #{student.StudentFName}
+            td #{student.StudentSName}
+            td #{student.StudentPassword}
+    h1 Enter the details of a new session
+      form(action="/student/students" method="POST")
+        table(border='1')
+          thead
+            th StudentID
+            th StudentFName
+            th StudentSName
+            th StudentPassword
+          tbody
+            td
+              input(type="text", name="StudentID")
+            td
+              input(type="text", name="StudentFName")
+            td
+              input(type="text", name="StudentSName")
+            td
+              input(type="text", name="StudentPassword")
+          tr
+          td
+            button(type="submit") Submit
+      

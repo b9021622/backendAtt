@@ -1,0 +1,40 @@
+html
+  head
+    title!= title
+  body
+    h1 !{message}
+    table(border='1')
+      thead
+         th LecturerID
+         th LecturerFName
+         th LecturerSName
+         th LecturerPassword
+      tbody
+        each lecturer in lecturers
+          tr
+            //td #{lecturer._id}
+            td #{lecturer.LecturerID}
+            td #{lecturer.LecturerFName}
+            td #{lecturer.LecturerSName}
+            td #{lecturer.LecturerPassword}
+    h1 Enter the details of a new session
+      form(action="/lecturer/lecturers" method="POST")
+        table(border='1')
+          thead
+            th LecturerID
+            th LecturerFName
+            th LecturerSName
+            th LecturerPassword
+          tbody
+            td
+              input(type="text", name="LecturerID")
+            td
+              input(type="text", name="LecturerFName")
+            td
+              input(type="text", name="LecturerSName")
+            td
+              input(type="text", name="LecturerPassword")
+          tr
+          td
+            button(type="submit") Submit
+      

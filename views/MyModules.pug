@@ -1,0 +1,17 @@
+html
+  head
+    title!= title
+  body
+    h1 !{message}
+    table(border='1')
+      thead
+         th ID
+         th Name
+         th Leader
+      tbody
+        each moduley in modules
+          tr
+            td #{moduley.ModuleID}
+            td #{moduley.ModuleName}
+            td #{moduley.ModuleLeader}
+      

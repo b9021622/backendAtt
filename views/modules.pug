@@ -1,0 +1,51 @@
+html
+  head
+    title!= title
+  body
+    h1 !{message}
+    table(border='1')
+      thead
+         th ID
+         th Name
+         th Leader
+      tbody
+        each moduley in modules
+          tr
+            td #{moduley.ModuleID}
+            td #{moduley.ModuleName}
+            td #{moduley.ModuleLeader}
+    h1 Enter the details of a new module
+      form(action="/module/modules" method="POST")
+        table(border='1')
+          thead
+            th ID
+            th Name
+            th Leader
+            th CourseID
+          tbody
+            td
+              input(type="text", name="ModuleID")
+            td
+              input(type="text", name="ModuleName")
+            td
+              input(type="text", name="ModuleLeader")
+            td
+              input(type="text", name="CourseID")
+          tr
+          td
+            button(type="submit") Submit
+    h1 Add Lecturer to module
+      form(action="/module/modules/add" method="POST")
+        table(border='1')
+          thead
+            th ModuleID
+            th LecturerID
+          tbody
+            td
+              input(type="text", name="ModuleID")
+            td
+              input(type="text", name="LecturerID")
+          tr
+          td
+            button(type="submit") Submit
+      

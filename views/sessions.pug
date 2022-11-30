@@ -1,0 +1,49 @@
+html
+  head
+    title!= title
+  body
+    h1 !{message}
+    table(border='1')
+      thead
+         th ID
+         th Name
+         th Leader
+      tbody
+        each session in sessions
+          tr
+            td #{session.SessionID}
+            td #{session.SessionName}
+            td #{session.Lecturer}
+            td #{session.SessionType}
+            td #{session.SessionDate}
+            td #{session.Length}
+    h1 Enter the details of a new session
+      form(action="/session/sessions" method="POST")
+        table(border='1')
+          thead
+            th ID
+            th Name
+            th Lecturer
+            th Type
+            th Date
+            th Length (h)
+            th ModuleID
+          tbody
+            td
+              input(type="text", name="SessionID")
+            td
+              input(type="text", name="SessionName")
+            td
+              input(type="text", name="LecturerID")
+            td
+              input(type="text", name="SessionType")
+            td
+              input(type="datetime-local", name="SessionDate")
+            td
+              input(type="number", name="Length")
+            td
+              input(type="text", name="ModuleID")
+          tr
+          td
+            button(type="submit") Submit
+      
