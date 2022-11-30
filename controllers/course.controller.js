@@ -1,33 +1,28 @@
 const db = require("../models");
 const Course = db.courses;
 
-// Create and Save a new Animal
 exports.create = (req, res) => {
-    // Validate request
     if (!req.body.CourseID) {
       res.status(400).send({ message: "Content can not be empty!" });
       return;
     }
     
-    // Create a Animal model object
     const course = new Course({
       CourseID: req.body.CourseID,
       CourseName: req.body.CourseName,
       CourseLeader: req.body.CourseLeader
     });
     //console.log(data);
-    // Save Animal in the database
     course
       .save()
       .then(data => {
         console.log("course saved in the database: " + data);
         db.lecturers.findByIdAndUpdate(
-          req.body.CourseLeader,  //We assume userid is an attribute in the JSON
+          req.body.CourseLeader,  
           { $push: { CoursesLed: data._id } },
           { new: true, useFindAndModify: false }
         ).then(data => {
           console.log(`The updated course: ${data}`);
-          // Returning the new animal
           //res.send(data);
         });
         res.redirect('/course/courses');
