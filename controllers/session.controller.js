@@ -1,9 +1,7 @@
 const { sessions } = require("../models");
 const db = require("../models");
 const Session = db.sessions;
-// Create and Save a new Animal
 exports.create = (req, res) => {
-    // Validate request
     if (!req.body.SessionID) {
       res.status(400).send({ message: "Content can not be empty!" });
       return;
@@ -11,7 +9,6 @@ exports.create = (req, res) => {
     
     console.log("req.body");
     console.log(req.body);
-    // Create a Animal model object
     const session = new Session({
       SessionID: req.body.SessionID,
       SessionName: req.body.SessionName,
@@ -30,13 +27,12 @@ exports.create = (req, res) => {
       .then(data => {
         console.log("session saved in the database: " + data);
         db.modules.findByIdAndUpdate(
-          req.body.SessionModule,  //We assume userid is an attribute in the JSON
+          req.body.SessionModule, 
           { $push: { Sessions: data._id } },
           { new: true, useFindAndModify: false }
         
         ).then(data => {
           //console.log(`The updated module: ${data}`);
-          // Returning the new animal
           //res.send(data);
         });
         //res.redirect('/session/sessions');
@@ -51,11 +47,9 @@ exports.create = (req, res) => {
       
    };
 
-// Retrieve all Animals from the database.
 exports.findAll = (req, res) => {
     const name = req.query.SessionName;
     console.log(req.body);
-    //We use req.query.name to get query string from the Request and consider it as condition for findAll() method.
     var condition = name ? { name: { $regex: new RegExp(name), $options: "i" } } : {};
      Session
       .find(condition)
@@ -81,7 +75,7 @@ exports.findAll = (req, res) => {
   .catch(err => {
   res.status(500).send({
     message:
-      err.message || "Some error occurred while retrieving Modules."
+      err.message || "Some error occurred while retrieving Session."
   });
   });
   };
@@ -94,12 +88,11 @@ exports.findAll = (req, res) => {
     .catch(err => {
     res.status(500).send({
       message:
-        err.message || "Some error occurred while retrieving Modules."
+        err.message || "Some error occurred while retrieving Session."
     });
     });
     };
  
-// Find a single Animal with an id
 exports.findOne = (req, res) => {
   console.log(req.params);
   const SessionID = req.params.id;
@@ -152,12 +145,9 @@ res.status(500).send({
 };
  
  
-// Update a Animal by the id in the request
 exports.update = (req, res) => {
   const SessionID = req.params.id;
- // modules.deleteOne({_id: ModuleID});
  var condition = SessionID ? { _id: SessionID} : {};
- //var myquery = { "_id": new mongoose.Types.ObjectId(ModuleID)};
  console.log(condition);
  console.log(req.body);
  sessions.findByIdAndUpdate(SessionID, req.body, function (err, docs) {
@@ -165,28 +155,24 @@ exports.update = (req, res) => {
       console.log(err)
   }
   else{
-      console.log("Removed User : ", docs);
+      console.log("Removed Session : ", docs);
   }});
   res.send("Updated");
 };
  
-// Delete a Animal with the specified id in the request
 exports.delete = (req, res) => {
   const SessionID = req.params.id;
- // modules.deleteOne({_id: ModuleID});
  var condition = SessionID ? { _id: SessionID} : {};
- //var myquery = { "_id": new mongoose.Types.ObjectId(ModuleID)};
  console.log(condition);
 sessions.findByIdAndRemove(SessionID, function (err, docs) {
   if (err){
       console.log(err)
   }
   else{
-      console.log("Removed User : ", docs);
+      console.log("Removed Session : ", docs);
   }});
 };
  
-// Delete all Animal from the database.
 exports.deleteAll = (req, res) => {
  
 };

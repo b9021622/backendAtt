@@ -1,15 +1,12 @@
 const db = require("../models");
 const Lecturer = db.lecturers;
 
-// Create and Save a new Animal
 exports.create = (req, res) => {
-    // Validate request
     if (!req.body.LecturerFName) {
       res.status(400).send({ message: "Content can not be empty!" });
       return;
     }
     
-    // Create a Animal model object
     const lecturer = new Lecturer({
       LecturerID: req.body.LecturerID,
       LecturerFName: req.body.LecturerFName,
@@ -17,11 +14,11 @@ exports.create = (req, res) => {
       LecturerPassword: req.body.LecturerPassword
     });
     
-    // Save Animal in the database
+
     lecturer
       .save()
       .then(data => {
-        console.log("Animal saved in the database: " + data);
+        console.log(" Lecturer saved in the database: " + data);
         res.redirect('/lecturer/lecturers');
         //res.send(data);
       })
@@ -33,10 +30,8 @@ exports.create = (req, res) => {
       });
    };
 
-// Retrieve all Animals from the database.
 exports.findAll = (req, res) => {
     const name = req.query.LecturerFName;
-    //We use req.query.name to get query string from the Request and consider it as condition for findAll() method.
     var condition = name ? { name: { $regex: new RegExp(name), $options: "i" } } : {};
      Lecturer
       .find(condition)
@@ -49,12 +44,11 @@ exports.findAll = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Some error occurred while retrieving Animals."
+            err.message || "Some error occurred while retrieving Lecturer."
         });
       });
    };
 
-// Find a single Animal with an id
 exports.findOne = (req, res) => {
   console.log(req.params);
   const LecturerID = req.params.id;
@@ -72,7 +66,7 @@ res.send(data);
 .catch(err => {
 res.status(500).send({
   message:
-    err.message || "Some error occurred while retrieving Sessions."
+    err.message || "Some error occurred while retrieving Lecturer."
 });
 });
 };
@@ -93,7 +87,7 @@ db.sessions
 .catch(err => {
   res.status(500).send({
     message:
-      err.message || "Some error occurred while retrieving Sessions."
+      err.message || "Some error occurred while retrieving Lecturer."
   });
 });
 };
@@ -115,22 +109,19 @@ db.modules
 .catch(err => {
   res.status(500).send({
     message:
-      err.message || "Some error occurred while retrieving Modules."
+      err.message || "Some error occurred while retrieving Lecturer."
   });
 });
 };
 
-// Update a Animal by the id in the request
 exports.update = (req, res) => {
  
 };
  
-// Delete a Animal with the specified id in the request
 exports.delete = (req, res) => {
  
 };
  
-// Delete all Animal from the database.
 exports.deleteAll = (req, res) => {
  
 };

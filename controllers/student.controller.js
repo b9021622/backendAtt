@@ -1,15 +1,12 @@
 const db = require("../models");
 const Student = db.students;
 
-// Create and Save a new Animal
 exports.create = (req, res) => {
-    // Validate request
-    if (!req.body.StudentFName) {
+      if (!req.body.StudentFName) {
       res.status(400).send({ message: "Content can not be empty!" });
       return;
     }
     
-    // Create a Animal model object
     const student = new Student({
     StudentID: req.body.StudentID,
     StudentFName: req.body.StudentFName,
@@ -17,7 +14,6 @@ exports.create = (req, res) => {
     StudentPassword: req.body.StudentPassword
     });
     
-    // Save Animal in the database
     student
       .save()
       .then(data => {
@@ -33,10 +29,9 @@ exports.create = (req, res) => {
       });
    };
 
-// Retrieve all Animals from the database.
 exports.findAll = (req, res) => {
     const name = req.query.StudentFName;
-    //We use req.query.name to get query string from the Request and consider it as condition for findAll() method.
+
     var condition = name ? { name: { $regex: new RegExp(name), $options: "i" } } : {};
      Student
       .find(condition)
@@ -53,8 +48,6 @@ exports.findAll = (req, res) => {
         });
       });
    };
- 
-// Find a single Animal with an id
 exports.findOne = (req, res) => {
     console.log(req.params);
     const StudentID = req.params.id;
@@ -139,17 +132,14 @@ exports.registerattendance = (req, res) => {
 };
 
 
-// Update a Animal by the id in the request
 exports.update = (req, res) => {
  
 };
  
-// Delete a Animal with the specified id in the request
 exports.delete = (req, res) => {
  
 };
  
-// Delete all Animal from the database.
 exports.deleteAll = (req, res) => {
  
 };

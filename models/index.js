@@ -6,7 +6,6 @@ mongoose.Promise = global.Promise;
 const db = {};
 db.mongoose = mongoose;
 db.url = dbConfig.url;
-db.animals = require("./animal.model.js")(mongoose);
 db.courses = require("./course.model.js")(mongoose);
 db.modules = require("./module.model.js")(mongoose);
 db.sessions = require("./session.model.js")(mongoose); 

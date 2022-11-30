@@ -36,15 +36,13 @@ exports.create = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Some error occurred while creating the Animal."
+            err.message || "Some error occurred while creating the Course."
         });
       });
    };
 
-// Retrieve all Animals from the database.
 exports.findAll = (req, res) => {
     const name = req.query.CourseName;
-    //We use req.query.name to get query string from the Request and consider it as condition for findAll() method.
     var condition = name ? { name: { $regex: new RegExp(name), $options: "i" } } : {};
      Course
       .find(condition)
@@ -57,12 +55,11 @@ exports.findAll = (req, res) => {
       .catch(err => {
         res.status(500).send({
           message:
-            err.message || "Some error occurred while retrieving Animals."
+            err.message || "Some error occurred while retrieving Courses."
         });
       });
    };
  
-// Find a single Animal with an id
 exports.findOne = (req, res) => {
   //console.log(req.params);
   const CourseID = req.params.id;
@@ -80,7 +77,7 @@ res.send(data);
 .catch(err => {
 res.status(500).send({
   message:
-    err.message || "Some error occurred while retrieving Sessions."
+    err.message || "Some error occurred while retrieving Courses."
 });
 });
 };
@@ -92,7 +89,7 @@ exports.addStudents = (req, res) => {
   .catch(err => {
   res.status(500).send({
     message:
-      err.message || "Some error occurred while retrieving Modules."
+      err.message || "Some error occurred while retrieving Courses."
   });
   });
   };
@@ -108,11 +105,10 @@ exports.addStudents = (req, res) => {
     .catch(err => {
     res.status(500).send({
       message:
-        err.message || "Some error occurred while retrieving Modules."
+        err.message || "Some error occurred while retrieving Courses."
     });
     });
     };
-// Update a Animal by the id in the request
 exports.update = (req, res) => {
   console.log(req.body);
 const CourseID = req.params.id;
@@ -121,21 +117,19 @@ const CourseID = req.params.id;
       console.log("he")
   }
   else{
-      console.log("Updated User : ", docs);
+      console.log("Updated Course : ", docs);
   }});
   res.send("updates");
 };
  
-// Delete a Animal with the specified id in the request
 exports.delete = (req, res) => {
   const CourseID = req.params.id;
- // modules.deleteOne({_id: ModuleID});
  db.courses.findByIdAndRemove(CourseID, function (err, docs) {
   if (err){
       console.log(err)
   }
   else{
-      console.log("Removed User : ", docs);
+      console.log("Removed Course : ", docs);
   }});
 //   try {
 //     modules.findOne(condition);
@@ -145,7 +139,6 @@ exports.delete = (req, res) => {
  res.send("DELETED");
 };
  
-// Delete all Animal from the database.
 exports.deleteAll = (req, res) => {
  
 };

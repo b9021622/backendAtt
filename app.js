@@ -4,26 +4,19 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-// Adding extra modules
 var bodyParser = require("body-parser");
 var cors = require('cors');
 
 var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
-// The router for animals
-var animalsRouter = require('./routes/animal.routes');
 var coursesRouter = require('./routes/course.routes');
 var modulesRouter = require('./routes/module.routes');
 var sessionsRouter = require('./routes/session.routes');
 var lecturersRouter = require('./routes/lecturer.routes');
 var studentsRouter = require('./routes/student.routes');
-//var authRouter = require('./routes/auth.routes');
 var app = express();
 
-// adding cors module
 app.use(cors());
 
-// view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
@@ -34,14 +27,11 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/petshop', animalsRouter);
 app.use('/course', coursesRouter);
 app.use('/module', modulesRouter);
 app.use('/session', sessionsRouter);
 app.use('/lecturer', lecturersRouter);
 app.use('/student', studentsRouter);
-//app.use('/auth', authRouter);
 require('./routes/auth.routes')(app);
 require('./routes/security.routes')(app);
 //Database connection code
