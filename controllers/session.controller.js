@@ -117,9 +117,9 @@ res.status(500).send({
 
 exports.bycodefindOne = (req, res) => {
   console.log(req.params);
-  const SessionID = req.params.id;
-  console.log(SessionID);
-  var condition = SessionID ? { AttendanceCode: SessionID} : {};
+  const SessionCode = req.params.id;
+  console.log(SessionCode);
+  var condition = SessionCode ? { AttendanceCode: SessionCode} : {};
 db.sessions
 .find(condition)
 .then(data => {
