@@ -11,7 +11,7 @@ router.get('/', function(req, res, next) {
 // Create a new animal
 router.post("/students/", studentController.create);
 router.post("/add/:id", studentController.addSession);
-router.put("/attended/:id", studentController.registerattendance);
+router.put("/Students/attended/:id", studentController.registerattendance);
 
 router.get("/getModules/:id",studentController.getModules);
 
