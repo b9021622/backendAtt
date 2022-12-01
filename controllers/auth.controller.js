@@ -40,7 +40,7 @@ exports.Stusignup = (req, res) => {
     .save()
     .then(data => {
         console.log("Signup student saved in the database");
-        res.send({ message: "student was registered successfully!" });
+        res.send({ message: "Student was registered successfully!" });
     })
     .catch(err => {
         res.status(500).send({ 

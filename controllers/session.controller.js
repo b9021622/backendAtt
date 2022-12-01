@@ -125,7 +125,7 @@ db.sessions
 .then(data => {
   if(!data.length){
     console.log("Empty");
-    res.send("Empty");
+    res.status(500).send();
   }
   else{
     console.log(data),
