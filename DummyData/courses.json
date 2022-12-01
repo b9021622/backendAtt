@@ -1,0 +1,29 @@
+[{
+  "_id": {
+    "$oid": "6387a35675013f90e9245117"
+  },
+  "CourseID": "cs001",
+  "CourseName": "computer science",
+  "CourseLeader": {
+    "$oid": "6387a2a475013f90e92450f5"
+  },
+  "Modules": [
+    {
+      "$oid": "6387a36b75013f90e924511d"
+    },
+    {
+      "$oid": "6387a37d75013f90e9245120"
+    },
+    {
+      "$oid": "6387a38b75013f90e9245123"
+    },
+    {
+      "$oid": "6387a39875013f90e9245126"
+    },
+    {
+      "$oid": "6387d686f9d7e40231d84c09"
+    }
+  ],
+  "StudentsEnrolled": [],
+  "__v": 0
+}]

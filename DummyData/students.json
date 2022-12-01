@@ -1,0 +1,181 @@
+[{
+  "_id": {
+    "$oid": "6387a2ef75013f90e92450fe"
+  },
+  "StudentID": "b1000000",
+  "StudentFName": "ben",
+  "StudentSName": "little",
+  "StudentPassword": "$2a$08$CorVLQya4Bn02C3sYyLK.unRZtTpeyrpFMGW1E7oOP2pPYle5GqvO",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [
+    {
+      "$oid": "6387a43175013f90e92452f1"
+    },
+    {
+      "$oid": "6387a44375013f90e92452f7"
+    },
+    {
+      "$oid": "6387a46475013f90e9245303"
+    },
+    {
+      "$oid": "6387a66e75013f90e924541f"
+    },
+    {
+      "$oid": "6387a47d75013f90e9245309"
+    },
+    {
+      "$oid": "6387a44e75013f90e92452fd"
+    },
+    {
+      "$oid": "6387a48775013f90e924530f"
+    }
+  ],
+  "SessionsAttended": [
+    {
+      "$oid": "6387a66e75013f90e924541f"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a2fb75013f90e9245101"
+  },
+  "StudentID": "b0000001",
+  "StudentFName": "michael",
+  "StudentSName": "watling",
+  "StudentPassword": "$2a$08$Lx7jfdp62YEr0xmlpCvE6.XyIPpncFAEO6AWyjn7lEfXSLvVrMYeC",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [
+    {
+      "$oid": "6387a43175013f90e92452f1"
+    },
+    {
+      "$oid": "6387a44375013f90e92452f7"
+    },
+    {
+      "$oid": "6387a4c875013f90e924533c"
+    },
+    {
+      "$oid": "6387a44e75013f90e92452fd"
+    },
+    {
+      "$oid": "6387a46475013f90e9245303"
+    },
+    {
+      "$oid": "6387a49a75013f90e924531b"
+    },
+    {
+      "$oid": "6387a4d075013f90e9245342"
+    },
+    {
+      "$oid": "6387a66e75013f90e924541f"
+    },
+    {
+      "$oid": "6387a4d875013f90e9245348"
+    }
+  ],
+  "SessionsAttended": [
+    {
+      "$oid": "6387a48d75013f90e9245315"
+    },
+    {
+      "$oid": "6387a66e75013f90e924541f"
+    },
+    {
+      "$oid": "6387a46475013f90e9245303"
+    },
+    {
+      "$oid": "6387a43175013f90e92452f1"
+    },
+    {
+      "$oid": "6387a44375013f90e92452f7"
+    },
+    {
+      "$oid": "6387a4a375013f90e9245321"
+    },
+    {
+      "$oid": "6387a4b375013f90e9245330"
+    }
+  ],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a30575013f90e9245104"
+  },
+  "StudentID": "b0000002",
+  "StudentFName": "tom",
+  "StudentSName": "wragg",
+  "StudentPassword": "$2a$08$i0yCl3nux1svB/wgw.c8uOiCR9J18AZJ01UX1GfBhJbHQ.moifNne",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [],
+  "SessionsAttended": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a31275013f90e9245107"
+  },
+  "StudentID": "b0000004",
+  "StudentFName": "matthew",
+  "StudentSName": "brock",
+  "StudentPassword": "$2a$08$bvorbkjNgubl2t1WLdtIB.YTsVea1LUMhMgcEGcCowP0xhljpxuAC",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [],
+  "SessionsAttended": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a31e75013f90e924510a"
+  },
+  "StudentID": "b0000005",
+  "StudentFName": "joe",
+  "StudentSName": "kirkup",
+  "StudentPassword": "$2a$08$s.sJwZ9vw2fyi2NA8mErD.PnH/DyopQZAESaYU8KWYC9CE.GD1Tji",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [],
+  "SessionsAttended": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a32875013f90e924510d"
+  },
+  "StudentID": "b0000006",
+  "StudentFName": "annie",
+  "StudentSName": "bradley",
+  "StudentPassword": "$2a$08$tqjGqRQXbeslWRfMHttkF.mF2rMYV2XgcivbJ0p3qoo1kw64d85du",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [],
+  "SessionsAttended": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a33675013f90e9245110"
+  },
+  "StudentID": "b0000007",
+  "StudentFName": "firsty",
+  "StudentSName": "lasty",
+  "StudentPassword": "$2a$08$gxDxSYR8toTeUDbUaoT5QeTdCeF0S1pTMGvupGXI3BtsyJMms4jzG",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [],
+  "SessionsAttended": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a34275013f90e9245113"
+  },
+  "StudentID": "b0000009",
+  "StudentFName": "john",
+  "StudentSName": "smith",
+  "StudentPassword": "$2a$08$/5bY7H3C9EsihFJsH/M6PuJxBaJ0uQwnlbDFpDbcH4CNMXitOqt.y",
+  "Course": [],
+  "ModulesStudied": [],
+  "SessionsScheduled": [],
+  "SessionsAttended": [],
+  "__v": 0
+}]

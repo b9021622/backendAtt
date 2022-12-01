@@ -1,0 +1,452 @@
+[{
+  "_id": {
+    "$oid": "6387a43175013f90e92452f1"
+  },
+  "SessionID": "session1",
+  "SessionName": "maths fundamentals",
+  "Lecturer": {
+    "$oid": "6387a27075013f90e92450ec"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-30T15:00:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a36b75013f90e924511d"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a2ef75013f90e92450fe"
+    },
+    {
+      "$oid": "6387a2fb75013f90e9245101"
+    },
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "af756",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a44375013f90e92452f7"
+  },
+  "SessionID": "session1",
+  "SessionName": "maths fundamentals",
+  "Lecturer": {
+    "$oid": "6387a27075013f90e92450ec"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-12-01T10:00:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a36b75013f90e924511d"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a2ef75013f90e92450fe"
+    },
+    {
+      "$oid": "6387a2fb75013f90e9245101"
+    },
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "7ae66",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a44e75013f90e92452fd"
+  },
+  "SessionID": "session1",
+  "SessionName": "maths fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-12-09T20:43:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a36b75013f90e924511d"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a2ef75013f90e92450fe"
+    },
+    {
+      "$oid": "6387a2fb75013f90e9245101"
+    },
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "2949a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a47d75013f90e9245309"
+  },
+  "SessionID": "session2",
+  "SessionName": "ethics fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-28T13:44:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a39875013f90e9245126"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    },
+    {
+      "$oid": "6387a33675013f90e9245110"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "85bdb",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a48775013f90e924530f"
+  },
+  "SessionID": "session2",
+  "SessionName": "ethics fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-17T18:44:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a39875013f90e9245126"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    },
+    {
+      "$oid": "6387a33675013f90e9245110"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "bc68c",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a48d75013f90e9245315"
+  },
+  "SessionID": "session2",
+  "SessionName": "ethics fundamentals",
+  "Lecturer": {
+    "$oid": "6387a27075013f90e92450ec"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-05T18:44:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a39875013f90e9245126"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    },
+    {
+      "$oid": "6387a33675013f90e9245110"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "56d6a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a4a375013f90e9245321"
+  },
+  "SessionID": "session3",
+  "SessionName": "sad fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-17T18:44:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a38b75013f90e9245123"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a31e75013f90e924510a"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    },
+    {
+      "$oid": "6387a33675013f90e9245110"
+    },
+    {
+      "$oid": "6387a34275013f90e9245113"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "fade1",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a4b375013f90e9245330"
+  },
+  "SessionID": "session3",
+  "SessionName": "sad fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-12-08T18:48:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a38b75013f90e9245123"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a31e75013f90e924510a"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    },
+    {
+      "$oid": "6387a33675013f90e9245110"
+    },
+    {
+      "$oid": "6387a34275013f90e9245113"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "6927b",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a4bb75013f90e9245336"
+  },
+  "SessionID": "session3",
+  "SessionName": "sad fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-05T18:45:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a38b75013f90e9245123"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a31e75013f90e924510a"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    },
+    {
+      "$oid": "6387a33675013f90e9245110"
+    },
+    {
+      "$oid": "6387a34275013f90e9245113"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "e3db7",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a4c875013f90e924533c"
+  },
+  "SessionID": "session4",
+  "SessionName": "algorithms fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-18T18:45:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a37d75013f90e9245120"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a2fb75013f90e9245101"
+    },
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "04914",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a4d075013f90e9245342"
+  },
+  "SessionID": "session4",
+  "SessionName": "algorithms fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-12-09T18:45:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a37d75013f90e9245120"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a2fb75013f90e9245101"
+    },
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "46c30",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a4d875013f90e9245348"
+  },
+  "SessionID": "session4",
+  "SessionName": "algorithms fundamentals",
+  "Lecturer": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "SessionType": "seminar",
+  "SessionDate": {
+    "$date": "2022-11-13T18:45:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a37d75013f90e9245120"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a2fb75013f90e9245101"
+    },
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    },
+    {
+      "$oid": "6387a32875013f90e924510d"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "efe3a",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a66e75013f90e924541f"
+  },
+  "SessionID": "maths1",
+  "SessionName": "maths fun",
+  "Lecturer": {
+    "$oid": "6387a27075013f90e92450ec"
+  },
+  "SessionType": "seminars",
+  "SessionDate": {
+    "$date": "2022-11-03T18:52:00Z"
+  },
+  "Length": 1,
+  "SessionModule": {
+    "$oid": "6387a36b75013f90e924511d"
+  },
+  "StudentsScheduled": [
+    {
+      "$oid": "6387a2ef75013f90e92450fe"
+    },
+    {
+      "$oid": "6387a2fb75013f90e9245101"
+    },
+    {
+      "$oid": "6387a30575013f90e9245104"
+    },
+    {
+      "$oid": "6387a31275013f90e9245107"
+    }
+  ],
+  "StudentsAttended": [],
+  "AttendanceCode": "25cbf",
+  "__v": 0
+}]

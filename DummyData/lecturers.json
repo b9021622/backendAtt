@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "6387a27075013f90e92450ec"
+  },
+  "LecturerID": "lecid1000",
+  "LecturerFName": "sarah",
+  "LecturerSName": "smith",
+  "LecturerPassword": "$2a$08$1pN4mnJAzwojIPE2QZK3tenvDwe/woTjHoO.hHhKLj2n0zQeOyf.e",
+  "CoursesLed": [],
+  "ModulesLed": [],
+  "SessionsScheduled": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a28175013f90e92450ef"
+  },
+  "LecturerID": "lecid1001",
+  "LecturerFName": "andrew",
+  "LecturerSName": "chu",
+  "LecturerPassword": "$2a$08$2Ngp4QummnjGbI3JRoke0OB24X7uN4ExSGLHqiTVxdd1YDeSUzeFy",
+  "CoursesLed": [],
+  "ModulesLed": [],
+  "SessionsScheduled": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a29675013f90e92450f2"
+  },
+  "LecturerID": "lecid1002",
+  "LecturerFName": "michael",
+  "LecturerSName": "meredith",
+  "LecturerPassword": "$2a$08$BL7tljKr/X50o5nOiAEzUO067x9ha7nB55QXkgdlnvs4ON39zR26K",
+  "CoursesLed": [],
+  "ModulesLed": [],
+  "SessionsScheduled": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a2a475013f90e92450f5"
+  },
+  "LecturerID": "lecid",
+  "LecturerFName": "mick",
+  "LecturerSName": "merriot",
+  "LecturerPassword": "$2a$08$5rTu/LjsjQ0sRYAflVxYeenpBzfjg.NCo8VoXOzlX1Xz27oVBjbsi",
+  "CoursesLed": [
+    {
+      "$oid": "6387a35675013f90e9245117"
+    },
+    {
+      "$oid": "6387e5e890b671fad9ec852b"
+    }
+  ],
+  "ModulesLed": [],
+  "SessionsScheduled": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a2b575013f90e92450f8"
+  },
+  "LecturerID": "lecid0004",
+  "LecturerFName": "steven",
+  "LecturerSName": "segal",
+  "LecturerPassword": "$2a$08$kLagyJw6NXBj5jJlnmRt1.iSm0Y7dCHwMwL4Ycxt5Gs9C4n7lGLK6",
+  "CoursesLed": [],
+  "ModulesLed": [],
+  "SessionsScheduled": [],
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "6387a2c275013f90e92450fb"
+  },
+  "LecturerID": "lecid354125",
+  "LecturerFName": "adam",
+  "LecturerSName": "campbell",
+  "LecturerPassword": "$2a$08$fZy5yzMCiVsqwu.TbdnXJO8Nd2f5N5MF3XqC.w7fCBIxFFBClFTn6",
+  "CoursesLed": [],
+  "ModulesLed": [],
+  "SessionsScheduled": [],
+  "__v": 0
+}]
